@@ -1,0 +1,20 @@
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+#slogan {
+  font-family: 'Lobster', cursive;
+}
+
+#middle-portion {
+  background-image: url('img/hero.jpg');
+  margin: 0 auto;
+}
+
+#menu {
+  font-family: 'Lobster', cursive;
+}
+
+#order {
+  font-family: 'Lobster', cursive;
+}
