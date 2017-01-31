@@ -27,7 +27,7 @@
 
     <div class='container'>
       <div class='row'>
-        <div class='col s6 z-depth-4  '>
+        <div class='col s6'>
           <h4 class='header' id="menu">Menu</h4>
           <div class='row'>
 
@@ -40,7 +40,7 @@
                   $8.99
                 </p>
                 <div class='divider'></div>
-                <a class="waves-effect waves-light btn pink accent-2">Add to Order</a>
+                <a class="waves-effect waves-light btn pink accent-2" id='burger'>Add to Order</a>
               </div>
             </div>
 
@@ -53,7 +53,7 @@
                   $11.99
                 </p>
                 <div class='divider'></div>
-                <a class="waves-effect waves-light btn pink accent-2">Add to Order</a>
+                <a class="waves-effect waves-light btn pink accent-2" id='pizza'>Add to Order</a>
               </div>
             </div>
 
@@ -66,7 +66,7 @@
                   $14.99
                 </p>
                 <div class='divider'></div>
-                <a class="waves-effect waves-light btn pink accent-2">Add to Order</a>
+                <a class="waves-effect waves-light btn pink accent-2" id='sandwich'>Add to Order</a>
               </div>
             </div>
 
@@ -80,7 +80,7 @@
                   $7.99
                 </p>
                 <div class='divider'></div>
-                <a class='waves-effect waves-light btn pink accent-2'>Add to Order</a>
+                <a class='waves-effect waves-light btn pink accent-2' id='ice-cream'>Add to Order</a>
               </div>
             </div>
 
@@ -92,21 +92,34 @@
         <!-- Order  -->
 
 
-        <div class='col s6 z-depth-3'>
+        <div class='col s6 z-depth-5'>
           <h4 class='header' id='order'>Order</h4>
           <div class='row'>
-            <div class="col s6 left">
-              <h5 class="header left">Item</h5>
-              <div id='item'>
-                asdf
-              </div>
-            </div>
-            <div class='col s6 right'>
-              <h5 class="header right" id="price">Price</h5>
-              <div id='price'>
-                asd
-              </div>
-            </div>
+            <table class='striped'>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th class='right'>Price</th>
+                </tr>
+              </thead>
+              <tbody id='shopping-cart'>
+              </tbody>
+            </table>
+
+            <table class='show col s6 right'>
+              <tr>
+                <td class='center'>Subtotal</td>
+                <td class='right' id='subtotal'></td>
+              </tr>
+              <tr>
+                <td class='center'>Tax</td>
+                <td class='right' id='tax'></td>
+              </tr>
+              <tr>
+                <td class='center'>Total</td>
+                <td class='right' id='total'></td>
+              </tr>
+            </table>
           </div>
 
           <div class='divider'></div>
@@ -145,7 +158,7 @@
                 </div>
               </div>
 
-              <button class="btn waves-effect waves-light pink accent-2 col s12" type="submit" name="action">Submit
+              <button class="btn waves-effect waves-light pink accent-2 col s12" type="submit" name="action" id='button'>Place Order
                 <i class="material-icons right">send</i>
               </button>
             </form>
@@ -185,5 +198,6 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src='js/materialize.js'></script>
+    <script src='script.js'></script>
   </body>
 </html>
